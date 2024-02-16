@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+
+:root{
+    --blue:#002fff;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    color: #444;
+    margin: 2rem 0;
+    color: var(--blue);
+  
+}
+
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    padding: 1rem 2rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0,.3);
+}
+
+.header .logo img{
+    height: 4rem;
+}
+
+.header nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0; padding: 0;
+}
+
+.header nav ul li{
+    margin:  1.5rem;
+}
+
+.header nav ul li a{
+    font-size: 2rem;
+    color: #666;
+}
+
+.header nav ul li a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.header .fa-bars{
+    font-size: 2.5rem;
+    color: #666;
+    cursor: pointer;
+    display: none;
+}
+
+.home .hero{  
+
+
+    min-height: 60vh;
+    background: url(glavna.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+    
+.home .hero .text1{
+    font-size: 5rem;
+    width: 45rem;
+    background: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+}
+
+.home .hero .text2{
+    font-size: 3rem;
+    width: 35rem;
+    background: var(--blue);
+    padding: 1rem 2rem;
+    text-align: center;
+    opacity: .8;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.home .counting{
+    min-height: 40vh;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .counting .box{
+    margin: 2rem 4rem;
+    text-align: center;
+}
+
+.home .counting .box .count{
+    font-size: 7rem;
+    color: black;
+    
+}
+
+.home .counting .box h3{
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+
+.about{
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.about .image{
+    padding: 2rem;
+}
+
+.about .image img{
+    height: 45rem;
+    object-fit: cover;
+    box-shadow: 2.5rem 2.5rem 0 1rem var(--blue);
+}
+
+
+.about .info{
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+
+.about .info h2{
+    color: var(--blue);
+    font-size: 3rem;
+}
+
+.about .info p{
+    font-size: 2.4rem;
+    color: #444;
+    margin: 2rem 0;
+}
+
+
+.about .info .icons a{
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  border-radius: .5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+
+.about .info .icons a:hover{
+    background: var(--blue);
+}
+
+
+.service{
+    min-height: 100vh;
+
+}
+
+.service .box-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    height: 25rem;
+    width: 25rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0,.3);
+    border-left: .5rem solid var(--blue);
+    border-right: .5rem solid var(--blue);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem 3rem;
+}
+
+.service .box-container .box .fas{
+    color: var(--blue);
+    font-size: 5rem;
+}
+
+
+.service .box-container .box p{
+    color: #333;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+
+.project{
+    min-height: 100vh;
+    background: #333;
+
+}
+.project .heading{
+    color: #fff;
+}
+
+
+.project .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.project .box-container .box{
+    height: 20rem;
+    width: 30rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .2rem .5rem #000;
+    overflow: hidden;
+}
+
+.project .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .box img:hover{
+    transform: scale(1.4);
+}
+
+.contant{
+    min-height: 100vh;
+}
+
+.contact-box-container{
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.contact-box-container .contact-box{
+    height: 15rem;
+    flex: 0 30rem;
+    margin: 2rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0,.2);
+    border-radius: .5rem;
+    text-align: center;
+    padding-top: 4rem;
+
+}
+
+
+.contact-box-container .contact-box i{
+    color: var(--blue);
+    font-size: 4rem;
+
+}
+
+
+.contact-box-container .contact-box h3{
+    font-size: 2rem;
+    color: #444;
+    margin: 0.5rem 0;
+
+}
+
+
+
+
+
+
+
+
+
+.fa-times{
+    transform: rotate(180deg);
+}
+
+
+/* media queries */
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+    header .fa-bars{
+        font-size: 2.5rem;
+        display: block;
+    }
+
+ 
+}
+
+
+
+
+
+
+
+
